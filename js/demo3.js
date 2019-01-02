@@ -217,9 +217,9 @@ function animateTitles() {
   });
 
   const glitch = (el,cycles) => {
-    if ( cycles === 0 || cycles > 1 ) return;
+    if ( cycles === 0 || cycles > 3 ) return;
     TweenMax.set(el, {
-      x: getRandomNumber(-200,20), 
+      x: getRandomNumber(-20,20), 
       y: getRandomNumber(-20,20),
       color: ['#f4d339','#df003f','#111111'][cycles-1]
     });
